@@ -13,7 +13,7 @@ DATABASE_URL = URL.create(
     host=HOST,
 )
 
-engine = create_engine(DATABASE_URL,echo=True)
+engine = create_engine(DATABASE_URL)
 
 LocalSession = sessionmaker(bind=engine)  # class factory yaratib beradi   session = LocalSession() -> Bu real  INSCTANCE yaratadi
 
